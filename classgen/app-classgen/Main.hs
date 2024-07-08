@@ -1,5 +1,6 @@
 import Classgen.Module
 import Classgen.Spec
+import Control.Monad
 import Control.Lens
 import Control.Monad.State
 import Data.Maybe (mapMaybe)

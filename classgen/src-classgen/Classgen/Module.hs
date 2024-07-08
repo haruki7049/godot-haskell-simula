@@ -2,6 +2,7 @@
 module Classgen.Module where
 
 import Control.Lens
+import Control.Monad
 import Control.Monad.State
 import Data.HashMap.Strict (HashMap)
 import qualified Data.HashMap.Strict as HM

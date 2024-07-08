@@ -1,7 +1,7 @@
 { mkDerivation, aeson, ansi-wl-pprint, base, bytestring, c2hs
 , casing, colour, containers, hpack, lens, linear, mtl, parsec
 , parsers, stdenv, stm, template-haskell, text
-, unordered-containers, vector, rsync, api-json ? null, lib, haskellPackages, godot-haskell-classgen, profileBuild ? false
+, unordered-containers, prettyprinter, prettyprinter-ansi-terminal, vector, rsync, api-json ? null, lib, haskellPackages, godot-haskell-classgen, profileBuild ? false
 }:
 let modifyGodotApi = lib.optionalString (api-json != null) ''
 cd classgen
@@ -20,7 +20,7 @@ mkDerivation {
   libraryHaskellDepends = [
     aeson ansi-wl-pprint base bytestring casing colour containers lens
     linear mtl parsec parsers stm template-haskell text
-    unordered-containers vector
+    unordered-containers vector prettyprinter prettyprinter-ansi-terminal
   ];
   libraryToolDepends = [ c2hs hpack rsync godot-haskell-classgen];
   preConfigure = ''
