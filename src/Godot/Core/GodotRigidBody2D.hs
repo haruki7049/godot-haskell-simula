@@ -7,33 +7,33 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern MODE_KINEMATIC :: Int
-
-pattern MODE_KINEMATIC = 3
-
 pattern MODE_CHARACTER :: Int
 
 pattern MODE_CHARACTER = 2
-
-pattern MODE_RIGID :: Int
-
-pattern MODE_RIGID = 0
-
-pattern MODE_STATIC :: Int
-
-pattern MODE_STATIC = 1
 
 pattern CCD_MODE_DISABLED :: Int
 
 pattern CCD_MODE_DISABLED = 0
 
-pattern CCD_MODE_CAST_RAY :: Int
+pattern MODE_RIGID :: Int
 
-pattern CCD_MODE_CAST_RAY = 1
+pattern MODE_RIGID = 0
 
 pattern CCD_MODE_CAST_SHAPE :: Int
 
 pattern CCD_MODE_CAST_SHAPE = 2
+
+pattern MODE_STATIC :: Int
+
+pattern MODE_STATIC = 1
+
+pattern MODE_KINEMATIC :: Int
+
+pattern MODE_KINEMATIC = 3
+
+pattern CCD_MODE_CAST_RAY :: Int
+
+pattern CCD_MODE_CAST_RAY = 1
 
 body_entered :: Signal GodotRigidBody2D
 body_entered = Signal "body_entered"

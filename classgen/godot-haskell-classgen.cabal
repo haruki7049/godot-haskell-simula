@@ -1,10 +1,10 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.31.2.
+-- This file has been generated from package.yaml by hpack version 0.35.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 39c6363ed12c4c2bf3311112a9af73e574fcbd0beafb3a0096da2db102225f27
+-- hash: 38a6b5618a82fb09c5d8c6476f504d561e9b47024559b658a92ef6fcd512036a
 
 name:           godot-haskell-classgen
 version:        0.1.0.0
@@ -32,7 +32,25 @@ library
       Paths_godot_haskell_classgen
   hs-source-dirs:
       src-classgen
-  default-extensions: FlexibleContexts FlexibleInstances ScopedTypeVariables TypeApplications StandaloneDeriving DerivingStrategies DefaultSignatures MultiParamTypeClasses FunctionalDependencies TypeFamilies TemplateHaskell TypeOperators TypeInType QuasiQuotes OverloadedStrings PatternSynonyms GeneralizedNewtypeDeriving
+  default-extensions:
+      FlexibleContexts
+      FlexibleInstances
+      ScopedTypeVariables
+      TypeApplications
+      StandaloneDeriving
+      DerivingStrategies
+      DefaultSignatures
+      MultiParamTypeClasses
+      FunctionalDependencies
+      TypeFamilies
+      TemplateHaskell
+      TypeOperators
+      DataKinds
+      PolyKinds
+      QuasiQuotes
+      OverloadedStrings
+      PatternSynonyms
+      GeneralizedNewtypeDeriving
   include-dirs:
       godot_headers
       cbits
@@ -60,7 +78,25 @@ executable godot-haskell-classgen
       Paths_godot_haskell_classgen
   hs-source-dirs:
       app-classgen
-  default-extensions: FlexibleContexts FlexibleInstances ScopedTypeVariables TypeApplications StandaloneDeriving DerivingStrategies DefaultSignatures MultiParamTypeClasses FunctionalDependencies TypeFamilies TemplateHaskell TypeOperators TypeInType QuasiQuotes OverloadedStrings PatternSynonyms GeneralizedNewtypeDeriving
+  default-extensions:
+      FlexibleContexts
+      FlexibleInstances
+      ScopedTypeVariables
+      TypeApplications
+      StandaloneDeriving
+      DerivingStrategies
+      DefaultSignatures
+      MultiParamTypeClasses
+      FunctionalDependencies
+      TypeFamilies
+      TemplateHaskell
+      TypeOperators
+      DataKinds
+      PolyKinds
+      QuasiQuotes
+      OverloadedStrings
+      PatternSynonyms
+      GeneralizedNewtypeDeriving
   include-dirs:
       godot_headers
       cbits

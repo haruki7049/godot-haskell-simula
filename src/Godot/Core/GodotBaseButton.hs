@@ -7,33 +7,33 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern DRAW_NORMAL :: Int
+pattern DRAW_DISABLED :: Int
 
-pattern DRAW_NORMAL = 0
-
-pattern DRAW_HOVER_PRESSED :: Int
-
-pattern DRAW_HOVER_PRESSED = 4
+pattern DRAW_DISABLED = 3
 
 pattern DRAW_PRESSED :: Int
 
 pattern DRAW_PRESSED = 1
 
+pattern DRAW_HOVER_PRESSED :: Int
+
+pattern DRAW_HOVER_PRESSED = 4
+
 pattern ACTION_MODE_BUTTON_PRESS :: Int
 
 pattern ACTION_MODE_BUTTON_PRESS = 0
 
-pattern DRAW_DISABLED :: Int
+pattern ACTION_MODE_BUTTON_RELEASE :: Int
 
-pattern DRAW_DISABLED = 3
+pattern ACTION_MODE_BUTTON_RELEASE = 1
 
 pattern DRAW_HOVER :: Int
 
 pattern DRAW_HOVER = 2
 
-pattern ACTION_MODE_BUTTON_RELEASE :: Int
+pattern DRAW_NORMAL :: Int
 
-pattern ACTION_MODE_BUTTON_RELEASE = 1
+pattern DRAW_NORMAL = 0
 
 button_down :: Signal GodotBaseButton
 button_down = Signal "button_down"

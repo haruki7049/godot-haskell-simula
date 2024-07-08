@@ -1,10 +1,10 @@
 cabal-version: 2.0
 
--- This file has been generated from package.yaml by hpack version 0.34.7.
+-- This file has been generated from package.yaml by hpack version 0.35.2.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: bd0178142a4b3f8994425aa628b69be960da7db72558cfd82eec0e4c0161652c
+-- hash: 5d135ec1e39ca37c2fa5fed1d1129c804a75267bdd15db95426101902c10bb56
 
 name:           godot-haskell
 version:        3.4.4.0
@@ -245,6 +245,7 @@ library
       Godot.Core.GodotFileDialog
       Godot.Core.GodotFont
       Godot.Core.GodotFuncRef
+      Godot.Core.GodotGDLMSensor
       Godot.Core.GodotGDNative
       Godot.Core.GodotGDNativeLibrary
       Godot.Core.GodotGDNativeLibraryResourceLoader
@@ -698,6 +699,7 @@ library
       Godot.Core.GodotVSeparator
       Godot.Core.GodotVSlider
       Godot.Core.GodotVSplitContainer
+      Godot.Core.GodotWaylandDisplay
       Godot.Core.GodotWeakRef
       Godot.Core.GodotWebRTCDataChannel
       Godot.Core.GodotWebRTCDataChannelGDNative
@@ -710,6 +712,24 @@ library
       Godot.Core.GodotWebSocketServer
       Godot.Core.GodotWebXRInterface
       Godot.Core.GodotWindowDialog
+      Godot.Core.GodotWlrBackend
+      Godot.Core.GodotWlrCompositor
+      Godot.Core.GodotWlrDataDeviceManager
+      Godot.Core.GodotWlrEventKeyboardKey
+      Godot.Core.GodotWlrKeyboard
+      Godot.Core.GodotWlrOutput
+      Godot.Core.GodotWlrSeat
+      Godot.Core.GodotWlrSubsurface
+      Godot.Core.GodotWlrSurface
+      Godot.Core.GodotWlrSurfaceAtResult
+      Godot.Core.GodotWlrSurfaceState
+      Godot.Core.GodotWlrXdgPopup
+      Godot.Core.GodotWlrXdgShell
+      Godot.Core.GodotWlrXdgSurface
+      Godot.Core.GodotWlrXdgToplevel
+      Godot.Core.GodotWlrXdgToplevelState
+      Godot.Core.GodotWlrXWayland
+      Godot.Core.GodotWlrXWaylandSurface
       Godot.Core.GodotWorld
       Godot.Core.GodotWorld2D
       Godot.Core.GodotWorldEnvironment
@@ -777,7 +797,8 @@ library
       TypeFamilies
       TemplateHaskell
       TypeOperators
-      TypeInType
+      DataKinds
+      PolyKinds
       QuasiQuotes
       OverloadedStrings
       PatternSynonyms
@@ -798,6 +819,8 @@ library
     , lens
     , linear
     , mtl
+    , prettyprinter
+    , prettyprinter-ansi-terminal
     , stm
     , template-haskell
     , text
@@ -830,7 +853,8 @@ library generate
       TypeFamilies
       TemplateHaskell
       TypeOperators
-      TypeInType
+      DataKinds
+      PolyKinds
       QuasiQuotes
       OverloadedStrings
       PatternSynonyms
@@ -846,6 +870,8 @@ library generate
     , mtl
     , parsec
     , parsers
+    , prettyprinter
+    , prettyprinter-ansi-terminal
     , stm
     , template-haskell
     , text

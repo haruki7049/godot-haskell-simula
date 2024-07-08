@@ -7,10 +7,10 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern FUNC_INVERSE :: Int
-
-pattern FUNC_INVERSE = 0
-
 pattern FUNC_TRANSPOSE :: Int
 
 pattern FUNC_TRANSPOSE = 1
+
+pattern FUNC_INVERSE :: Int
+
+pattern FUNC_INVERSE = 0

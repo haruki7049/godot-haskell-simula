@@ -7,29 +7,9 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern STRETCH_ASPECT_KEEP_WIDTH :: Int
+pattern STRETCH_ASPECT_KEEP :: Int
 
-pattern STRETCH_ASPECT_KEEP_WIDTH = 2
-
-pattern STRETCH_ASPECT_EXPAND :: Int
-
-pattern STRETCH_ASPECT_EXPAND = 4
-
-pattern GROUP_CALL_REALTIME :: Int
-
-pattern GROUP_CALL_REALTIME = 2
-
-pattern STRETCH_ASPECT_IGNORE :: Int
-
-pattern STRETCH_ASPECT_IGNORE = 0
-
-pattern GROUP_CALL_DEFAULT :: Int
-
-pattern GROUP_CALL_DEFAULT = 0
-
-pattern GROUP_CALL_REVERSE :: Int
-
-pattern GROUP_CALL_REVERSE = 1
+pattern STRETCH_ASPECT_KEEP = 1
 
 pattern STRETCH_MODE_VIEWPORT :: Int
 
@@ -39,13 +19,25 @@ pattern STRETCH_MODE_2D :: Int
 
 pattern STRETCH_MODE_2D = 1
 
-pattern STRETCH_ASPECT_KEEP :: Int
+pattern STRETCH_ASPECT_IGNORE :: Int
 
-pattern STRETCH_ASPECT_KEEP = 1
+pattern STRETCH_ASPECT_IGNORE = 0
 
 pattern STRETCH_ASPECT_KEEP_HEIGHT :: Int
 
 pattern STRETCH_ASPECT_KEEP_HEIGHT = 3
+
+pattern GROUP_CALL_REVERSE :: Int
+
+pattern GROUP_CALL_REVERSE = 1
+
+pattern GROUP_CALL_DEFAULT :: Int
+
+pattern GROUP_CALL_DEFAULT = 0
+
+pattern STRETCH_ASPECT_EXPAND :: Int
+
+pattern STRETCH_ASPECT_EXPAND = 4
 
 pattern GROUP_CALL_UNIQUE :: Int
 
@@ -54,6 +46,14 @@ pattern GROUP_CALL_UNIQUE = 4
 pattern STRETCH_MODE_DISABLED :: Int
 
 pattern STRETCH_MODE_DISABLED = 0
+
+pattern GROUP_CALL_REALTIME :: Int
+
+pattern GROUP_CALL_REALTIME = 2
+
+pattern STRETCH_ASPECT_KEEP_WIDTH :: Int
+
+pattern STRETCH_ASPECT_KEEP_WIDTH = 2
 
 connected_to_server :: Signal GodotSceneTree
 connected_to_server = Signal "connected_to_server"

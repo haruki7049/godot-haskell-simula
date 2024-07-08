@@ -7,37 +7,37 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern TRANSFER_MODE_UNRELIABLE :: Int
+pattern TARGET_PEER_BROADCAST :: Int
 
-pattern TRANSFER_MODE_UNRELIABLE = 0
-
-pattern CONNECTION_CONNECTING :: Int
-
-pattern CONNECTION_CONNECTING = 1
-
-pattern CONNECTION_CONNECTED :: Int
-
-pattern CONNECTION_CONNECTED = 2
-
-pattern TRANSFER_MODE_RELIABLE :: Int
-
-pattern TRANSFER_MODE_RELIABLE = 2
-
-pattern TRANSFER_MODE_UNRELIABLE_ORDERED :: Int
-
-pattern TRANSFER_MODE_UNRELIABLE_ORDERED = 1
+pattern TARGET_PEER_BROADCAST = 0
 
 pattern TARGET_PEER_SERVER :: Int
 
 pattern TARGET_PEER_SERVER = 1
 
+pattern TRANSFER_MODE_UNRELIABLE_ORDERED :: Int
+
+pattern TRANSFER_MODE_UNRELIABLE_ORDERED = 1
+
+pattern TRANSFER_MODE_RELIABLE :: Int
+
+pattern TRANSFER_MODE_RELIABLE = 2
+
+pattern TRANSFER_MODE_UNRELIABLE :: Int
+
+pattern TRANSFER_MODE_UNRELIABLE = 0
+
+pattern CONNECTION_CONNECTED :: Int
+
+pattern CONNECTION_CONNECTED = 2
+
 pattern CONNECTION_DISCONNECTED :: Int
 
 pattern CONNECTION_DISCONNECTED = 0
 
-pattern TARGET_PEER_BROADCAST :: Int
+pattern CONNECTION_CONNECTING :: Int
 
-pattern TARGET_PEER_BROADCAST = 0
+pattern CONNECTION_CONNECTING = 1
 
 connection_failed :: Signal GodotNetworkedMultiplayerPeer
 connection_failed = Signal "connection_failed"

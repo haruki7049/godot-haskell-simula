@@ -11,13 +11,13 @@ pattern AXIS_STRETCH_MODE_TILE :: Int
 
 pattern AXIS_STRETCH_MODE_TILE = 1
 
-pattern AXIS_STRETCH_MODE_TILE_FIT :: Int
-
-pattern AXIS_STRETCH_MODE_TILE_FIT = 2
-
 pattern AXIS_STRETCH_MODE_STRETCH :: Int
 
 pattern AXIS_STRETCH_MODE_STRETCH = 0
+
+pattern AXIS_STRETCH_MODE_TILE_FIT :: Int
+
+pattern AXIS_STRETCH_MODE_TILE_FIT = 2
 
 texture_changed :: Signal GodotStyleBoxTexture
 texture_changed = Signal "texture_changed"

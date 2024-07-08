@@ -7,13 +7,13 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern TANGENT_MODE_COUNT :: Int
-
-pattern TANGENT_MODE_COUNT = 2
-
 pattern TANGENT_LINEAR :: Int
 
 pattern TANGENT_LINEAR = 1
+
+pattern TANGENT_MODE_COUNT :: Int
+
+pattern TANGENT_MODE_COUNT = 2
 
 pattern TANGENT_FREE :: Int
 

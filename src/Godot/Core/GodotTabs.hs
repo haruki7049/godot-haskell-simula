@@ -7,6 +7,18 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
+pattern ALIGN_RIGHT :: Int
+
+pattern ALIGN_RIGHT = 2
+
+pattern ALIGN_MAX :: Int
+
+pattern ALIGN_MAX = 3
+
+pattern CLOSE_BUTTON_SHOW_ALWAYS :: Int
+
+pattern CLOSE_BUTTON_SHOW_ALWAYS = 2
+
 pattern CLOSE_BUTTON_MAX :: Int
 
 pattern CLOSE_BUTTON_MAX = 3
@@ -19,25 +31,13 @@ pattern ALIGN_CENTER :: Int
 
 pattern ALIGN_CENTER = 1
 
-pattern CLOSE_BUTTON_SHOW_ALWAYS :: Int
+pattern CLOSE_BUTTON_SHOW_NEVER :: Int
 
-pattern CLOSE_BUTTON_SHOW_ALWAYS = 2
+pattern CLOSE_BUTTON_SHOW_NEVER = 0
 
 pattern ALIGN_LEFT :: Int
 
 pattern ALIGN_LEFT = 0
-
-pattern ALIGN_RIGHT :: Int
-
-pattern ALIGN_RIGHT = 2
-
-pattern ALIGN_MAX :: Int
-
-pattern ALIGN_MAX = 3
-
-pattern CLOSE_BUTTON_SHOW_NEVER :: Int
-
-pattern CLOSE_BUTTON_SHOW_NEVER = 0
 
 reposition_active_tab_request :: Signal GodotTabs
 reposition_active_tab_request

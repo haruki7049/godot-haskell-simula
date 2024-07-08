@@ -7,29 +7,29 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern DROP_MODE_ON_ITEM :: Int
+pattern SELECT_MULTI :: Int
 
-pattern DROP_MODE_ON_ITEM = 1
+pattern SELECT_MULTI = 2
+
+pattern DROP_MODE_DISABLED :: Int
+
+pattern DROP_MODE_DISABLED = 0
 
 pattern DROP_MODE_INBETWEEN :: Int
 
 pattern DROP_MODE_INBETWEEN = 2
 
-pattern SELECT_SINGLE :: Int
+pattern DROP_MODE_ON_ITEM :: Int
 
-pattern SELECT_SINGLE = 0
-
-pattern SELECT_MULTI :: Int
-
-pattern SELECT_MULTI = 2
+pattern DROP_MODE_ON_ITEM = 1
 
 pattern SELECT_ROW :: Int
 
 pattern SELECT_ROW = 1
 
-pattern DROP_MODE_DISABLED :: Int
+pattern SELECT_SINGLE :: Int
 
-pattern DROP_MODE_DISABLED = 0
+pattern SELECT_SINGLE = 0
 
 button_pressed :: Signal GodotTree
 button_pressed = Signal "button_pressed"

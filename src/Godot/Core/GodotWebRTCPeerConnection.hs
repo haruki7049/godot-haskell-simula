@@ -7,17 +7,17 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern STATE_CONNECTED :: Int
+pattern STATE_NEW :: Int
 
-pattern STATE_CONNECTED = 2
+pattern STATE_NEW = 0
 
 pattern STATE_FAILED :: Int
 
 pattern STATE_FAILED = 4
 
-pattern STATE_DISCONNECTED :: Int
+pattern STATE_CONNECTED :: Int
 
-pattern STATE_DISCONNECTED = 3
+pattern STATE_CONNECTED = 2
 
 pattern STATE_CLOSED :: Int
 
@@ -27,9 +27,9 @@ pattern STATE_CONNECTING :: Int
 
 pattern STATE_CONNECTING = 1
 
-pattern STATE_NEW :: Int
+pattern STATE_DISCONNECTED :: Int
 
-pattern STATE_NEW = 0
+pattern STATE_DISCONNECTED = 3
 
 data_channel_received :: Signal GodotWebRTCPeerConnection
 data_channel_received = Signal "data_channel_received"

@@ -7,13 +7,13 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern VISIBILITY_ALWAYS :: Int
-
-pattern VISIBILITY_ALWAYS = 0
-
 pattern VISIBILITY_TOUCHSCREEN_ONLY :: Int
 
 pattern VISIBILITY_TOUCHSCREEN_ONLY = 1
+
+pattern VISIBILITY_ALWAYS :: Int
+
+pattern VISIBILITY_ALWAYS = 0
 
 pressed :: Signal GodotTouchScreenButton
 pressed = Signal "pressed"

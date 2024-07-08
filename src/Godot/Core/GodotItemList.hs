@@ -7,21 +7,21 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern SELECT_SINGLE :: Int
-
-pattern SELECT_SINGLE = 0
-
 pattern SELECT_MULTI :: Int
 
 pattern SELECT_MULTI = 1
+
+pattern ICON_MODE_LEFT :: Int
+
+pattern ICON_MODE_LEFT = 1
 
 pattern ICON_MODE_TOP :: Int
 
 pattern ICON_MODE_TOP = 0
 
-pattern ICON_MODE_LEFT :: Int
+pattern SELECT_SINGLE :: Int
 
-pattern ICON_MODE_LEFT = 1
+pattern SELECT_SINGLE = 0
 
 item_activated :: Signal GodotItemList
 item_activated = Signal "item_activated"

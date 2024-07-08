@@ -7,13 +7,13 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern OVERLAY_POSITION :: Int
-
-pattern OVERLAY_POSITION = 2
-
 pattern OVERLAY_DISABLED :: Int
 
 pattern OVERLAY_DISABLED = 0
+
+pattern OVERLAY_POSITION :: Int
+
+pattern OVERLAY_POSITION = 2
 
 pattern OVERLAY_BREAKPOINT :: Int
 

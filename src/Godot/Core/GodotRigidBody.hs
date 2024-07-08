@@ -7,10 +7,6 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern MODE_KINEMATIC :: Int
-
-pattern MODE_KINEMATIC = 3
-
 pattern MODE_CHARACTER :: Int
 
 pattern MODE_CHARACTER = 2
@@ -22,6 +18,10 @@ pattern MODE_RIGID = 0
 pattern MODE_STATIC :: Int
 
 pattern MODE_STATIC = 1
+
+pattern MODE_KINEMATIC :: Int
+
+pattern MODE_KINEMATIC = 3
 
 body_entered :: Signal GodotRigidBody
 body_entered = Signal "body_entered"

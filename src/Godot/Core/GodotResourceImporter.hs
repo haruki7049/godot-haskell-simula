@@ -7,10 +7,10 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern IMPORT_ORDER_DEFAULT :: Int
-
-pattern IMPORT_ORDER_DEFAULT = 0
-
 pattern IMPORT_ORDER_SCENE :: Int
 
 pattern IMPORT_ORDER_SCENE = 100
+
+pattern IMPORT_ORDER_DEFAULT :: Int
+
+pattern IMPORT_ORDER_DEFAULT = 0

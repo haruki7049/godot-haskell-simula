@@ -7,13 +7,13 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern SPACE_OVERRIDE_REPLACE :: Int
-
-pattern SPACE_OVERRIDE_REPLACE = 3
-
 pattern SPACE_OVERRIDE_DISABLED :: Int
 
 pattern SPACE_OVERRIDE_DISABLED = 0
+
+pattern SPACE_OVERRIDE_REPLACE :: Int
+
+pattern SPACE_OVERRIDE_REPLACE = 3
 
 pattern SPACE_OVERRIDE_REPLACE_COMBINE :: Int
 

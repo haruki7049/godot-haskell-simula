@@ -19,13 +19,13 @@ pattern FFT_SIZE_2048 :: Int
 
 pattern FFT_SIZE_2048 = 3
 
-pattern FFT_SIZE_4096 :: Int
-
-pattern FFT_SIZE_4096 = 4
-
 pattern FFT_SIZE_512 :: Int
 
 pattern FFT_SIZE_512 = 1
+
+pattern FFT_SIZE_4096 :: Int
+
+pattern FFT_SIZE_4096 = 4
 
 pattern FFT_SIZE_256 :: Int
 

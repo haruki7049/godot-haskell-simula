@@ -7,13 +7,13 @@ import Godot.Gdnative.Internal
 import Godot.Gdnative.Types
 import Godot.Api.Auto
 
-pattern DRAGGER_HIDDEN :: Int
-
-pattern DRAGGER_HIDDEN = 1
-
 pattern DRAGGER_HIDDEN_COLLAPSED :: Int
 
 pattern DRAGGER_HIDDEN_COLLAPSED = 2
+
+pattern DRAGGER_HIDDEN :: Int
+
+pattern DRAGGER_HIDDEN = 1
 
 pattern DRAGGER_VISIBLE :: Int
 
