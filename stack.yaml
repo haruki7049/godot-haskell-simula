@@ -1,9 +1,5 @@
 resolver: lts-18.28
 
-extra-deps:
-- git: https://github.com/haruki7049/godot-classgen-hs
-  commit: 'df9ea0af53b086d03cf6465c277900ceb62ed322'
-
 require-stack-version: ">=1.8"
 
 nix:

@@ -3,18 +3,7 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages:
-- completed:
-    commit: df9ea0af53b086d03cf6465c277900ceb62ed322
-    git: https://github.com/haruki7049/godot-classgen-hs
-    name: godot-haskell-classgen
-    pantry-tree:
-      sha256: b9f40f152578ee2b5de2f9b471e39c9adbd55498437cb4594a1cbb65ded86e17
-      size: 3779
-    version: 0.1.0.0
-  original:
-    commit: df9ea0af53b086d03cf6465c277900ceb62ed322
-    git: https://github.com/haruki7049/godot-classgen-hs
+packages: []
 snapshots:
 - completed:
     sha256: 428ec8d5ce932190d3cbe266b9eb3c175cd81e984babf876b64019e2cbe4ea68
