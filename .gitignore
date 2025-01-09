@@ -25,3 +25,6 @@ lhr-*/
 
 # emacs TAG file
 TAGS
+
+# Nix's result
+result
