@@ -62,15 +62,16 @@
     },
     "stacklock2nix": {
       "locked": {
-        "lastModified": 1731366632,
-        "narHash": "sha256-dd10Hyqbyhg83pgxE8Sl1jo9wdYzTU4muH83TjhyrCY=",
-        "owner": "cdepillabout",
+        "lastModified": 1736544819,
+        "narHash": "sha256-bpq/ce25av6/6+fDOmKECi/LE8YuLYlRTKpaY0J17Ts=",
+        "owner": "haruki7049",
         "repo": "stacklock2nix",
-        "rev": "3cb77e9c869be90ad939f368096ff2cc940881d4",
+        "rev": "4fab281a0f6a7a4889a03b7217366e06b9b922b8",
         "type": "github"
       },
       "original": {
-        "owner": "cdepillabout",
+        "owner": "haruki7049",
+        "ref": "additionalDevShellBuildInputs",
         "repo": "stacklock2nix",
         "type": "github"
       }
