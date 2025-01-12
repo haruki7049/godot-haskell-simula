@@ -16,19 +16,41 @@
       systems = import inputs.systems;
 
       perSystem =
-        { pkgs, system, ... }:
+        { pkgs, lib, system, ... }:
         let
           overlays = [
             inputs.stacklock2nix.overlay
             (final: prev: {
+              godot-headers = final.stdenv.mkDerivation {
+                name = "godot-headers";
+                src = final.fetchFromGitHub {
+                  owner = "haruki7049";
+                  repo = "godot-headers";
+                  rev = "d0b51a65412a02a8d0316cc6092a3e1b2811c085";
+                  hash = "sha256-IMIJrUZG3mc0O80fE2JkhMh14rNCu+tcSE4Zb/EwEzI=";
+                };
+
+                nativeBuildInputs = [
+                  final.meson
+                  final.ninja
+                  final.pkg-config
+                ];
+              };
               gdhs-stacklock = final.stacklock2nix {
                 stackYaml = ./stack.yaml;
                 baseHaskellPkgSet = final.haskell.packages.ghc8107;
 
-                additionalDevShellNativeBuildInputs = stacklockHaskellPkgSet: [
-                  final.stack
-                  final.nil
-                ];
+                devShellArguments = {
+                  nativeBuildInputs = stacklockHaskellPkgSet: [
+                    final.stack
+                    final.nil
+                    final.pkg-config
+                  ];
+                  buildInputs = stacklockHaskellPkgSet: [
+                    final.pkg-config
+                    final.godot-headers
+                  ];
+                };
 
                 additionalHaskellPkgSetOverrides = hfinal: hprev: {
                   lens = final.haskell.lib.compose.dontCheck hprev.lens;

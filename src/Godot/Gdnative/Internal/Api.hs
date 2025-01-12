@@ -46,7 +46,7 @@ gdnativeExtNet32ApiStruct :: GdnativeExtNet32ApiStruct
 gdnativeExtNet32ApiStruct = accursedUnutterablePerformIO $ readIORef gdnativeExtNet32ApiStructRef
 
 $(do
-    maybeApis <- eitherDecode <$> runIO (BL.readFile "godot_headers/gdnative_api.json")
+    maybeApis <- eitherDecode <$> runIO ()
     case maybeApis of
       Right apis -> apisToHs apis
       Left err -> error err)

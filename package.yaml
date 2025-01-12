@@ -11,8 +11,6 @@ github: KaneTW/godot-haskell
 extra-source-files:
 - README.md
 - cbits/*
-- godot_headers/**/*.h
-- godot_headers/**/*.json
 
 dependencies:
 - base
@@ -29,6 +27,9 @@ dependencies:
 - mtl
 - stm
 - extra
+
+pkg-config-dependencies:
+- godot-headers
 
 default-extensions:
 - FlexibleContexts
@@ -53,6 +54,8 @@ executables:
   godot-haskell-project-generator:
     main: Main.hs
     source-dirs: project-generator
+    pkg-config-dependencies:
+    - godot-headers
     dependencies:
       - fsnotify
       - directory
@@ -65,9 +68,11 @@ library:
   build-tools:
   - c2hs
   include-dirs:
-  - godot_headers
   - cbits
+  pkg-config-dependencies:
+  - godot-headers
   dependencies:
+  - split
   - generate
   - linear
   - colour

@@ -4,7 +4,7 @@ cabal-version: 2.0
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: dfe080c34645fcd276973d3f4a425827ce5464c3058671a040be9e125382daf1
+-- hash: ea4cef54b7694f6087027c51b2cbedfb2209169e6f5b79e53daf03db743def03
 
 name:           godot-haskell
 version:        3.1.0.0
@@ -22,35 +22,6 @@ build-type:     Simple
 extra-source-files:
     README.md
     cbits/util.h
-    godot_headers/android/godot_android.h
-    godot_headers/arvr/godot_arvr.h
-    godot_headers/gdnative/aabb.h
-    godot_headers/gdnative/array.h
-    godot_headers/gdnative/basis.h
-    godot_headers/gdnative/color.h
-    godot_headers/gdnative/dictionary.h
-    godot_headers/gdnative/gdnative.h
-    godot_headers/gdnative/node_path.h
-    godot_headers/gdnative/plane.h
-    godot_headers/gdnative/pool_arrays.h
-    godot_headers/gdnative/quat.h
-    godot_headers/gdnative/rect2.h
-    godot_headers/gdnative/rid.h
-    godot_headers/gdnative/string.h
-    godot_headers/gdnative/string_name.h
-    godot_headers/gdnative/transform.h
-    godot_headers/gdnative/transform2d.h
-    godot_headers/gdnative/variant.h
-    godot_headers/gdnative/vector2.h
-    godot_headers/gdnative/vector3.h
-    godot_headers/gdnative_api_struct.gen.h
-    godot_headers/nativescript/godot_nativescript.h
-    godot_headers/net/godot_net.h
-    godot_headers/net/godot_webrtc.h
-    godot_headers/pluginscript/godot_pluginscript.h
-    godot_headers/videodecoder/godot_videodecoder.h
-    godot_headers/api.json
-    godot_headers/gdnative_api.json
 
 source-repository head
   type: git
@@ -657,6 +628,7 @@ library
       Godot.Gdnative
       Godot.Gdnative.Internal
       Godot.Gdnative.Internal.Api
+      Godot.Gdnative.Internal.Envs
       Godot.Gdnative.Internal.Gdnative
       Godot.Gdnative.Internal.TH
       Godot.Gdnative.Internal.Types
@@ -717,8 +689,10 @@ library
       GeneralizedNewtypeDeriving
   ghc-options: -O0
   include-dirs:
-      godot_headers
       cbits
+  pkgconfig-depends:
+      godot-headers
+    , godot-headers
   build-tools:
       c2hs
   build-depends:
@@ -733,6 +707,7 @@ library
     , lens
     , linear
     , mtl
+    , split
     , stm
     , template-haskell
     , text
@@ -772,6 +747,8 @@ library generate
       PatternSynonyms
       GeneralizedNewtypeDeriving
   ghc-options: -O0
+  pkgconfig-depends:
+      godot-headers
   build-depends:
       aeson
     , ansi-wl-pprint
@@ -819,6 +796,9 @@ executable godot-haskell-project-generator
       PatternSynonyms
       GeneralizedNewtypeDeriving
   ghc-options: -O0
+  pkgconfig-depends:
+      godot-headers
+    , godot-headers
   build-depends:
       aeson
     , base
